@@ -1,0 +1,105 @@
+.root {
+    -fx-background-color: #0f172a;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #1e293b;
+}
+
+.tab-pane .tab {
+    -fx-background-color: #0f172a;
+    -fx-background-radius: 5 5 0 0;
+    -fx-padding: 8 20 8 20;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #38bdf8;
+}
+
+.tab .tab-label {
+    -fx-text-fill: #94a3b8;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.tab:selected .tab-label {
+    -fx-text-fill: #0f172a;
+}
+
+.label {
+    -fx-text-fill: #cbd5e1;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.text-field, .combo-box {
+    -fx-background-color: rgba(255, 255, 255, 0.05);
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #64748b;
+    -fx-padding: 8px;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #38bdf8;
+    -fx-effect: dropshadow(three-pass-box, rgba(56, 189, 248, 0.4), 10, 0, 0, 0);
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: white;
+}
+
+.radio-button {
+    -fx-text-fill: #cbd5e1;
+    -fx-font-size: 14px;
+}
+
+.radio-button .radio {
+    -fx-border-color: #38bdf8;
+    -fx-border-radius: 10px;
+    -fx-background-color: transparent;
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: #38bdf8;
+}
+
+.button {
+    -fx-background-color: rgba(56, 189, 248, 0.1);
+    -fx-border-color: #38bdf8;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #38bdf8;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 8 24 8 24;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #38bdf8;
+    -fx-text-fill: #0f172a;
+    -fx-effect: dropshadow(three-pass-box, rgba(56, 189, 248, 0.6), 15, 0, 0, 0);
+}
+
+.list-view {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-radius: 8px;
+}
+
+.list-cell {
+    -fx-background-color: rgba(255, 255, 255, 0.02);
+    -fx-text-fill: #e2e8f0;
+    -fx-padding: 10px;
+    -fx-font-size: 14px;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: rgba(56, 189, 248, 0.1);
+}
