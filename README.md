@@ -14,7 +14,7 @@ A desktop application built with JavaFX demonstrating a complete Model-View-Cont
 * **Dynamic Data Binding:** Utilizes `ObservableList` to instantly update the UI when new data is added.
 
 ### 🛠️ Technologies Used
-* Java 21+
+* Java 25+
 * JavaFX
 * FXML (Scene Builder)
 * Maven
