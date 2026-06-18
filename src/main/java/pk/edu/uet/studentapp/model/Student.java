@@ -1,45 +1,35 @@
 package pk.edu.uet.studentapp.model;
 
 public class Student {
+    private int id;
     private String name;
-    private String gender;
-    private String department;
+    private int age;
+    private String major;
 
-    // Constructor
-    public Student(String name, String gender, String department) {
+    // Constructor for retrieving existing students from the database (includes ID)
+    public Student(int id, String name, int age, String major) {
+        this.id = id;
         this.name = name;
-        this.gender = gender;
-        this.department = department;
+        this.age = age;
+        this.major = major;
     }
 
-    // Getters and Setters
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
+    // Constructor for inserting new students (ID is omitted because MySQL AUTO_INCREMENT handles it) [cite: 42, 43]
+    public Student(String name, int age, String major) {
         this.name = name;
+        this.age = age;
+        this.major = major;
     }
 
-    public String getGender() {
-        return gender;
-    }
+    // Getters
+    public int getId() { return id; }
+    public String getName() { return name; }
+    public int getAge() { return age; }
+    public String getMajor() { return major; }
 
-    public void setGender(String gender) {
-        this.gender = gender;
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
-    // This override ensures the ListView displays the exact string format requested in the lab
+    // Overriding toString() so the data formats cleanly inside our JavaFX ListView
     @Override
     public String toString() {
-        return "Name: " + name + ", Gender: " + gender + ", Course: " + department;
+        return "ID: " + id + " | Name: " + name + " | Age: " + age + " | Major: " + major;
     }
 }
